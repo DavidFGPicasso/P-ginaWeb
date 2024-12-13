@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/stylesformulario.css">
+    <title>Formulario</title>
+</head>
+<!--Página del formulario-->
+<body>
+    <header>
+        <h1>Página de Boxeo</h1>
+    </header>
+    <!--Navegador de la página web-->
+    <nav>
+        <a id="principal" href="index.html">Inicio</a>
+        <a id="equipamiento" href="equipamiento.html">Equipamiento</a>
+        <a id= "reglas" href="reglas.html">Reglas</a>
+        <a id="actualidad" href="actualidad.html">Actualidad</a>
+    </nav>
+    <!--Formulario-->
+    <div class="contenedorformulario">
+        <h2 class="textoformulario">Formulario de Datos de Boxeo</h2>
+        <form action="submit.html">
+            <div class="contenidoformulario">
+                <label for="nombre"><h3>Nombre del Boxeador:</h3></label>
+                <input type="text" id="nombre" name="nombre" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" placeholder="Ej.: Muhammad Ali" required>
+            </div>
+            <div class="contenidoformulario">
+                <label for="peso"><h3>Peso (kg):</h3></label>
+                <input type="number" id="peso" name="peso" step="0.1" min="0" inputmode="decimal" placeholder="Ej.: 70.5" required>
+            </div>
+            <div class="contenidoformulario">
+                <label for="categoria"><h3>Categoría:</h3></label>
+                <select id="categoria" name="categoria" required>
+                    <option value="" disabled selected>Seleccione una categoría</option>
+                    <option value="peso-pluma">Peso Pluma</option>
+                    <option value="peso-ligero">Peso Ligero</option>
+                    <option value="peso-medio">Peso Medio</option>
+                    <option value="peso-pesado">Peso Pesado</option>
+                </select>
+            </div>
+            <div class="contenidoformulario">
+                <label for="nacionalidad"><h3>Nacionalidad:</h3></label>
+                <input type="text" id="nacionalidad" name="nacionalidad" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" placeholder="Ej.: Mexicana" required>
+            </div>
+            <div class="contenidoformulario">
+                <label for="ciudad"><h3>Ciudad:</h3></label>
+                <input type="text" id="ciudad" name="ciudad" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" placeholder="Ej.: Málaga" required>
+            </div>
+            <div class="contenidoformulario">
+                <label for="aficiones"><h3>Aficiones:</h3></label>
+                <input type="text" id="aficiones" name="aficiones" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" placeholder="Ej.: Natación" required>
+            </div>
+            <div class="contenidoformulario">
+                <label for="record"><h3>Récord (Victorias - Derrotas):</h3></label>
+                <input type="text" id="record" name="record" pattern="\d{1,2}-\d{1,2}" title="Formato válido: Números separados por guion. Ej.: 20-3" placeholder="Ej.: 20-3" required>
+            </div>
+            <div class="contenidoformulario">
+                <label for="altura"><h3>Altura (cm):</h3></label>
+                <input type="number" id="altura" name="altura" step="0.1" min="0" inputmode="numeric" placeholder="Ej.: 175.0" required>
+            </div>
+            <div class="contenidoformulario">
+                <label for="alcance"><h3>Alcance (cm):</h3></label>
+                <input type="number" id="alcance" name="alcance" step="0.1" min="0" inputmode="numeric" placeholder="Ej.: 180.0" required>
+            </div>
+            <div class="contenidoformulario">
+                <label for="biografia"><h3>Breve Biografía:</h3></label>
+                <textarea id="biografia" name="biografia" placeholder="Ej.: Comencé a boxear a los 15 años..." required></textarea>
+            </div>
+            <div class="contenidoformulario">
+                <button type="submit">Enviar Datos</button>
+                <br>
+                <br>
+              <h3 class="textoconfirmar">Al enviar los datos, acepta el uso de los mismos con fines estadísticos.</h3></p>
+            </div>
+        </form>
+    </div>
+    
+    </div>    
+</body>
+</html>

@@ -1,0 +1,140 @@
+/*Estilos generales de la página web.*/
+*{
+    margin: 0;
+    padding: 0;
+    cursor: url(../images/guanteboxeo.png), auto;
+}
+/*Estilos del header.*/
+header{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:rgb(205, 92, 92);
+    height:10vh;
+    justify-content:center;
+    text-align: center;
+    color: whitesmoke;
+}
+/*Estilos del body*/
+body{
+    background-color: rgb(237, 148, 148);
+}
+/*Estilos de los enlaces*/
+a{
+    color: white;
+    font-size:3vh;
+    text-decoration: none;
+}
+/*Estilos del navegador*/
+nav{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    display: flex;
+    background-color: rgb(240, 128, 128);
+    height:6vh;
+    justify-content: left;
+    text-align: left;   
+}
+#reglas{
+    width: 25vw;
+    text-align: center;
+    border: 2px solid black;
+}
+#equipamiento{
+    width: 25vw;
+    text-align: center;
+    border: 2px solid black;
+}
+#formulario{
+    width: 25vw;
+    text-align: center;
+    border: 2px solid black;
+}
+#principal{
+    width:25vw;
+    text-align: center;
+    border: 2px solid black;
+}
+#actualidad{
+    width: 25vw;
+    text-align: center;
+    border: 2px solid black;
+}
+/*Texto de las noticias*/
+.textonoticias{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+}
+/*Contenedor de las noticias*/
+.contnoticias{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    height:35vh;
+}
+/*Estilos generales de las noticias*/
+.noticia{
+    font-size: 2.5vh;
+    color: white;
+    text-decoration: solid;
+}
+.noticia:hover{
+    color:rgba(108, 32, 32, 0.919);
+}
+/*Estilos de las listas*/
+li{
+    margin-left: 1vw;
+}
+li::marker{
+    color: brown;
+}
+/*Texto boxeo femenino*/
+.boxeofemenino{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+}
+/*Contenedor de las noticias de boxeo femenino*/
+.contnoticias2{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    height:35vh;
+}
+/* Imagen boxeador*/
+.boxeador{
+    width:26vw;
+    float: right;
+    margin-right:5vw;
+}
+/*Imagen boxeadora*/
+.boxeadora{
+    width: 26vw;
+    float: right;
+    margin-right:5vw;
+}
+/* Responsive móvil*/
+@media(max-width:768px){
+    #reglas{
+        font-size:1.9vh;
+    }
+    #equipamiento{
+        font-size:1.9vh;
+    }
+    #formulario{
+        font-size:1.9vh;
+    }
+    #principal{
+        font-size:1.9vh;
+    }
+}
